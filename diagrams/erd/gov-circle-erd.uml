@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.action</OriginalElement>
+  <nodes>
+    <node x="130.0" y="1691.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.user_role</node>
+    <node x="-178.5" y="767.0">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user_authorities</node>
+    <node x="567.0" y="166.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.merge_request</node>
+    <node x="60.5" y="-368.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user</node>
+    <node x="367.0" y="691.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.role</node>
+    <node x="1407.0" y="136.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.rule</node>
+    <node x="686.5" y="1721.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.voting_threshold</node>
+    <node x="1487.0" y="1291.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.constitution</node>
+    <node x="-96.0" y="2307.0">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user_user_roles</node>
+    <node x="1767.0" y="646.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.opinion</node>
+    <node x="1564.0" y="2171.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.amendment</node>
+    <node x="470.5" y="1427.0">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.role_authorities</node>
+    <node x="1088.5" y="451.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.action</node>
+    <node x="764.0" y="661.5">ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.rule_change_history</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.rule_change_history" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="-72.5" y="-158.5" />
+      <point x="836.5" y="80.0" />
+      <point x="229.0" y="80.0" />
+      <point x="229.0" y="40.0" />
+      <point x="225.71428571428572" y="40.0" />
+      <point x="36.71428571428572" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.constitution" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="-81.33333333333334" y="-188.5" />
+      <point x="1527.6666666666667" y="1240.0" />
+      <point x="349.0" y="1240.0" />
+      <point x="349.0" y="80.0" />
+      <point x="229.0" y="80.0" />
+      <point x="229.0" y="40.0" />
+      <point x="225.71428571428572" y="40.0" />
+      <point x="36.71428571428572" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.action" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="70.25" y="-368.5" />
+      <point x="1299.25" y="100.0" />
+      <point x="989.0" y="100.0" />
+      <point x="989.0" y="40.0" />
+      <point x="262.42857142857144" y="40.0" />
+      <point x="73.42857142857144" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.amendment" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.opinion" relationship="REFERENCES">
+      <point x="108.75" y="-188.5" />
+      <point x="1817.75" y="2140.0" />
+      <point x="1809.0" y="2140.0" />
+      <point x="1809.0" y="1860.0" />
+      <point x="1889.0" y="1860.0" />
+      <point x="0.0" y="173.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.rule" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="-61.0" y="-143.5" />
+      <point x="1468.0" y="80.0" />
+      <point x="229.0" y="80.0" />
+      <point x="229.0" y="40.0" />
+      <point x="225.71428571428572" y="40.0" />
+      <point x="36.71428571428572" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.amendment" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="36.25" y="-188.5" />
+      <point x="1745.25" y="2140.0" />
+      <point x="1749.0" y="2140.0" />
+      <point x="1749.0" y="100.0" />
+      <point x="989.0" y="100.0" />
+      <point x="989.0" y="40.0" />
+      <point x="262.42857142857144" y="40.0" />
+      <point x="73.42857142857144" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="-128.5" y="-94.25" />
+      <point x="9.0" y="-274.25" />
+      <point x="9.0" y="60.0" />
+      <point x="115.57142857142856" y="60.0" />
+      <point x="-73.42857142857143" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.role_authorities" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.role" relationship="REFERENCES">
+      <point x="0.0" y="-53.0" />
+      <point x="589.0" y="1400.0" />
+      <point x="489.0" y="1400.0" />
+      <point x="0.0" y="128.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.constitution" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.action" relationship="REFERENCES">
+      <point x="0.0" y="-188.5" />
+      <point x="1609.0" y="1220.0" />
+      <point x="1229.0" y="1220.0" />
+      <point x="0.0" y="368.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user_user_roles" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="-82.5" y="-53.0" />
+      <point x="-13.5" y="2280.0" />
+      <point x="-211.0" y="2280.0" />
+      <point x="-211.0" y="740.0" />
+      <point x="-11.0" y="740.0" />
+      <point x="-11.0" y="80.0" />
+      <point x="152.28571428571428" y="80.0" />
+      <point x="-36.71428571428572" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.voting_threshold" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="-81.66666666666666" y="-158.5" />
+      <point x="727.3333333333334" y="1380.0" />
+      <point x="309.0" y="1380.0" />
+      <point x="309.0" y="80.0" />
+      <point x="229.0" y="80.0" />
+      <point x="229.0" y="40.0" />
+      <point x="225.71428571428572" y="40.0" />
+      <point x="36.71428571428572" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.voting_threshold" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.role" relationship="REFERENCES">
+      <point x="0.0" y="-158.5" />
+      <point x="809.0" y="1400.0" />
+      <point x="489.0" y="1400.0" />
+      <point x="0.0" y="128.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.user_role" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.role" relationship="REFERENCES">
+      <point x="44.75" y="-188.5" />
+      <point x="353.75" y="1400.0" />
+      <point x="489.0" y="1400.0" />
+      <point x="0.0" y="128.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.amendment" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.constitution" relationship="REFERENCES">
+      <point x="-36.25" y="-188.5" />
+      <point x="1672.75" y="2120.0" />
+      <point x="1609.0" y="2120.0" />
+      <point x="0.0" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user_user_roles" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.user_role" relationship="REFERENCES">
+      <point x="82.5" y="-53.0" />
+      <point x="151.5" y="2280.0" />
+      <point x="309.0" y="2280.0" />
+      <point x="0.0" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.role" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="-61.0" y="-128.5" />
+      <point x="428.0" y="80.0" />
+      <point x="229.0" y="80.0" />
+      <point x="229.0" y="40.0" />
+      <point x="225.71428571428572" y="40.0" />
+      <point x="36.71428571428572" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user_authorities" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="0.0" y="-53.0" />
+      <point x="-11.0" y="80.0" />
+      <point x="152.28571428571428" y="80.0" />
+      <point x="-36.71428571428572" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.opinion" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="81.33333333333334" y="-173.5" />
+      <point x="1970.3333333333335" y="60.0" />
+      <point x="299.14285714285717" y="60.0" />
+      <point x="110.14285714285717" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.merge_request" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="61.0" y="-113.5" />
+      <point x="750.0" y="100.0" />
+      <point x="989.0" y="100.0" />
+      <point x="989.0" y="40.0" />
+      <point x="262.42857142857144" y="40.0" />
+      <point x="73.42857142857144" y="188.5" />
+    </edge>
+    <edge source="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.user_role" target="ee0350b2-cfd3-4415-8179-94476f3f5b96.TABLE:govcircle.public.application_user" relationship="REFERENCES">
+      <point x="-44.75" y="-188.5" />
+      <point x="264.25" y="1660.0" />
+      <point x="269.0" y="1660.0" />
+      <point x="269.0" y="80.0" />
+      <point x="229.0" y="80.0" />
+      <point x="229.0" y="40.0" />
+      <point x="225.71428571428572" y="40.0" />
+      <point x="36.71428571428572" y="188.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.3722770592239619" showDependencies="false" x="895.8625096440696" y="765.1999999999998" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

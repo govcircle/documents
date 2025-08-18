@@ -1,0 +1,58 @@
+digraph "action" {
+
+splines  = ortho;
+fontname = "Inconsolata";
+
+node [colorscheme = ylgnbu4];
+edge [colorscheme = dark28, dir = both];
+
+action                       [shape = record, pos = "15.118,34.257!"   , label = "{ action |  dropped_epoch : integer\l  enacted_epoch : integer\l  expired_epoch : integer\l  expiry_epoch : integer\l  ratified_epoch : integer\l  submission_epoch : integer\l  vote_abstain : integer\l  vote_no : integer\l  vote_yes : integer\l  created_at : timestamp(6)\l  created_by_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  action_type : varchar(255)\l  cert_index : varchar(255)\l  deposit_amount : varchar(255)\l  ip : varchar(255)\l  stake_address : varchar(255)\l  status : varchar(255)\l  tag : varchar(255)\l  title : varchar(255)\l  tx_hash : varchar(255)\l| id : bigint\l }"];
+amendment                    [shape = record, pos = "21.722,10.368!"   , label = "{ amendment |  constitution_id : bigint\l  created_at : timestamp(6)\l  created_by_id : bigint\l  opinion_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  amendment_type : varchar(255)\l  ip : varchar(255)\l  src_rules : text\l  target_rules : text\l| id : bigint\l }"];
+application_user             [shape = record, pos = "0.840,45.646!"    , label = "{ application_user |  status : smallint\l  created_at : timestamp(6)\l  created_by_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  email : varchar(255)\l  ip : varchar(255)\l  nonce : varchar(255)\l  user_address : varchar(255)\l  username : varchar(255)\l| id : bigint\l }"];
+application_user_authorities [shape = record, pos = "-2.479,29.875!"   , label = "{ application_user_authorities |  application_user_id : bigint\l  authorities : varchar(255)\l }"];
+application_user_user_roles  [shape = record, pos = "-1.333,8.486!"    , label = "{ application_user_user_roles |  application_user_id : bigint\l  user_roles_id : bigint\l }"];
+constitution                 [shape = record, pos = "20.653,22.590!"   , label = "{ constitution |  created_at : timestamp(6)\l  created_by_id : bigint\l  gov_action_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  data_hash : varchar(255)\l  ip : varchar(255)\l  script : varchar(255)\l  url : varchar(255)\l  certificate : jsonb\l| id : bigint\l }"];
+merge_request                [shape = record, pos = "7.875,38.215!"    , label = "{ merge_request |  created_at : timestamp(6)\l  created_by_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  ip : varchar(255)\l| id : bigint\l }"];
+opinion                      [shape = record, pos = "24.542,31.549!"   , label = "{ opinion |  created_at : timestamp(6)\l  created_by_id : bigint\l  owner_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  intention : varchar(255)\l  ip : varchar(255)\l  status : varchar(255)\l  user_act : text\l| id : bigint\l }"];
+role                         [shape = record, pos = "5.097,30.924!"    , label = "{ role |  created_at : timestamp(6)\l  created_by_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  ip : varchar(255)\l  title : varchar(255)\l| id : bigint\l }"];
+role_authorities             [shape = record, pos = "6.535,20.708!"    , label = "{ role_authorities |  role_id : bigint\l  authorities : varchar(255)\l }"];
+rule                         [shape = record, pos = "19.542,38.632!"   , label = "{ rule |  created_at : timestamp(6)\l  created_by_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  ip : varchar(255)\l  rule : varchar(255)\l  status : varchar(255)\l| id : bigint\l }"];
+rule_change_history          [shape = record, pos = "10.611,31.340!"   , label = "{ rule_change_history |  base_rule_id : bigint\l  created_at : timestamp(6)\l  created_by_id : bigint\l  revised_rule_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  amendment_type : varchar(255)\l  ip : varchar(255)\l| id : bigint\l }"];
+user_role                    [shape = record, pos = "1.806,17.035!"    , label = "{ user_role |  end_epoch : integer\l  start_epoch : integer\l  created_at : timestamp(6)\l  created_by_id : bigint\l  role_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  user_id : bigint\l  actor_registration_status : varchar(255)\l  ip : varchar(255)\l| id : bigint\l }"];
+voting_threshold             [shape = record, pos = "9.535,16.618!"    , label = "{ voting_threshold |  percentage : integer\l  created_at : timestamp(6)\l  created_by_id : bigint\l  role_id : bigint\l  updated_at : timestamp(6)\l  updated_by_id : bigint\l  action_type : varchar(255)\l  ip : varchar(255)\l| id : bigint\l }"];
+
+action                       -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+action                       -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+amendment                    -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+amendment                    -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+amendment                    -> constitution                 [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "constitution_id:id", headlabel = ""];
+amendment                    -> opinion                      [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "opinion_id:id", headlabel = ""];
+application_user             -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+application_user             -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+application_user_authorities -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "application_user_id:id", headlabel = ""];
+application_user_user_roles  -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "application_user_id:id", headlabel = ""];
+application_user_user_roles  -> user_role                    [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "user_roles_id:id", headlabel = ""];
+constitution                 -> action                       [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "gov_action_id:id", headlabel = ""];
+constitution                 -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+constitution                 -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+merge_request                -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+merge_request                -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+opinion                      -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+opinion                      -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+opinion                      -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "owner_id:id", headlabel = ""];
+role                         -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+role                         -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+role_authorities             -> role                         [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "role_id:id", headlabel = ""];
+rule                         -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+rule                         -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+rule_change_history          -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+rule_change_history          -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+user_role                    -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+user_role                    -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "user_id:id", headlabel = ""];
+user_role                    -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+user_role                    -> role                         [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "role_id:id", headlabel = ""];
+voting_threshold             -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "updated_by_id:id", headlabel = ""];
+voting_threshold             -> application_user             [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "created_by_id:id", headlabel = ""];
+voting_threshold             -> role                         [color = "#595959", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "role_id:id", headlabel = ""];
+
+}
