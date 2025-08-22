@@ -1,3 +1,4 @@
+-- Represents the actual user
 create table public.application_user
 (
     status        smallint
@@ -24,6 +25,7 @@ create table public.application_user
 alter table public.application_user
     owner to sa;
 
+-- Governance actions
 create table public.action
 (
     dropped_epoch    integer not null,
@@ -65,6 +67,7 @@ create table public.action
 alter table public.action
     owner to sa;
 
+-- the authorities of users, will be derived by users governance role
 create table public.application_user_authorities
 (
     application_user_id bigint not null
@@ -76,6 +79,7 @@ create table public.application_user_authorities
 alter table public.application_user_authorities
     owner to sa;
 
+-- Cardano's on chain constitution
 create table public.constitution
 (
     created_at    timestamp(6),
@@ -102,6 +106,7 @@ create table public.constitution
 alter table public.constitution
     owner to sa;
 
+-- Represents the request to merge ones Opinion to the current constitution
 create table public.merge_request
 (
     created_at    timestamp(6),
@@ -120,6 +125,7 @@ create table public.merge_request
 alter table public.merge_request
     owner to sa;
 
+-- Represents ones opinion to the current on chain constitution
 create table public.opinion
 (
     created_at    timestamp(6),
@@ -148,6 +154,7 @@ create table public.opinion
 alter table public.opinion
     owner to sa;
 
+-- Represent each change to the blocks of the current on chain constitution, e.g (Section, tenets, Appendix ...)
 create table public.amendment
 (
     constitution_id bigint
@@ -178,6 +185,7 @@ create table public.amendment
 alter table public.amendment
     owner to sa;
 
+-- Derived from Cardano's governance roles
 create table public.role
 (
     created_at    timestamp(6),
@@ -209,6 +217,7 @@ create table public.role_authorities
 alter table public.role_authorities
     owner to sa;
 
+-- Represent each block of the constitution, e.g (Section, tenet, Appendix ...)
 create table public.rule
 (
     created_at    timestamp(6),
@@ -231,6 +240,7 @@ create table public.rule
 alter table public.rule
     owner to sa;
 
+-- An internal model, helps to get clear diff between different versions of Constitution
 create table public.rule_change_history
 (
     base_rule_id    bigint,
@@ -255,6 +265,7 @@ create table public.rule_change_history
 alter table public.rule_change_history
     owner to sa;
 
+-- User may have different roles at the same time
 create table public.user_role
 (
     end_epoch                 integer not null,
