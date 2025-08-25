@@ -1,0 +1,16 @@
+# Table of contents
+
+* [Welcome](README.md)
+* [Table of contents](summary.md)
+* [getting-started](getting-started/README.md)
+  * [Publish your docs](getting-started/publish-your-docs.md)
+  * [Introduction](getting-started/quickstart.md)
+* [modules](modules/README.md)
+  * [Constitution](modules/editor.md)
+  * [Space](modules/images-and-media.md)
+  * [Health Checker](modules/integrations.md)
+  * [Governance Tool](modules/interactive-blocks.md)
+  * [Action Checker](modules/openapi.md)
+  * [Circle](modules/markdown/README.md)
+    * [Formal](modules/markdown/formal.md)
+    * [Informal](modules/markdown/informal.md)
