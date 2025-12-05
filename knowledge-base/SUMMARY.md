@@ -7,7 +7,7 @@
   * [Introduction](getting-started/quickstart.md)
 * [modules](modules/README.md)
   * [Constitution](modules/editor.md)
-  * [Space](modules/images-and-media.md)
+  * [Circle](modules/circle.md)
   * [Health Checker](modules/integrations.md)
   * [Governance Tool](modules/interactive-blocks.md)
   * [Action Checker](modules/openapi.md)
