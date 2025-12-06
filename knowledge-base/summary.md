@@ -4,8 +4,8 @@
 
 ## Getting Started
 
-* [Introduction](getting-started/quickstart.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
+* [Introduction](quickstart.md)
+* [Publish your docs](/broken/pages/JjjojIyKxaiBPzzLwvtg)
 
 ## Modules
 

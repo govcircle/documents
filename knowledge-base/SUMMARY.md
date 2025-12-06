@@ -2,9 +2,8 @@
 
 * [Welcome](README.md)
 * [Table of contents](summary.md)
-* [getting-started](getting-started/README.md)
-  * [Publish your docs](getting-started/publish-your-docs.md)
-  * [Introduction](getting-started/quickstart.md)
+* [Introduction](quickstart.md)
+* [getting-started](getting-started.md)
 * [modules](modules/README.md)
   * [Constitution](modules/editor.md)
   * [Circle](modules/circle.md)
