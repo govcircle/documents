@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Table of contents](summary.md)
 * [Introduction](quickstart.md)
 * [getting-started](getting-started.md)
 * [modules](modules/README.md)
